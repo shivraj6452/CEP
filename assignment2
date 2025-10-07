@@ -1,0 +1,35 @@
+//parent class
+class car{
+    void speed() {
+        System.out.println ("car speed is 200km/hr");
+
+    }    
+}
+//child class
+ class ferrari extends car{
+    void speed(){
+        System.out.println ("ferrari speed is 300km/hr");
+    }
+ }
+  class lamborghini extends car{
+    void speed(){
+        System .out.println ("lamborghini speed is 400km/hr");
+    }
+  }
+    //main class
+    class test{
+        public static void main (String args[]){
+            car c =new car();
+            c.speed();
+            ferrari f =new ferrari();
+            f.speed();
+            lamborghini l = new lamborghini();
+            l.speed();
+            
+        }
+    }
+PS C:\Users\admin\Desktop\.ipynb_checkpoints>  & 'C:\Program Files\Java\jdk-19\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\admin\AppData\Roaming\Code\User\workspaceStorage\97c9eaa2484a51852e1f0f0463894368\redhat.java\jdt_ws\.ipynb_checkpoints_564237d6\bin' 'test'
+ws\x5c.ipynb_checkpoints_564237d6\x5cbin' 'test' ;62e25039-88a5-4c96-8fab-62be1ecb15b1car speed is 200km/hr
+ferrari speed is 300km/hr
+lamborghini speed is 400km/hr
+PS C:\Users\admin\Desktop\.ipynb_checkpoints> 
