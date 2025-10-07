@@ -1,0 +1,36 @@
+//create shape class with area method and override it in circle and rectangle classes
+class shape{
+    int r;
+    int l;
+    int b;
+    double area(){
+        
+        return 0;
+
+    }
+}
+//using method overriding
+class circle extends shape{
+    double area(){
+        return Math.PI*r*r;
+        
+    }
+}
+class rectangle extends shape{
+    double area(){
+        return l*b;
+    }
+}
+//main method
+public class main{
+    public static void main(String[] args){
+       circle c=new circle();
+         c.r=5;
+        System.out.println("Area of circle:"+c.area());
+        rectangle r =new rectangle();
+        r.l=4;
+        r.b=6;
+        System.out.println("Area of rectangle:"+r.area());
+    }
+}
+         
